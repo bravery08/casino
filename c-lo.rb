@@ -56,13 +56,13 @@ def tell_score
   
   case
   when @die1 == @die2
-    puts "you have a match "
+    puts "Check your score from the last 3 numbers"
   
   when @die1 == @die3
-    puts "you have a match "
+    puts "Check your score from the last 3 numbers"
   
   when @die2 == @die3
-    puts "you have a match "
+    puts "Check your score from the last 3 numbers"
   when @die1 == 4 && @die2 == 5 && @die3 == 6
     puts "C-lo!"
   when @die2 == 4 && @die1 == 5 && @die3 == 6
@@ -75,28 +75,14 @@ def tell_score
     puts "C-lo!"
   when @die1 == 5 &&  @die2 == 6 && @die3 == 4  
     puts "C-lo!"
+  when @die1 == 6 &&  @die2 == 4 && @die3 == 5 
+    puts "C-lo!"
+  when @die1 == 1 &&  @die2 == 1 && @die3 == 1  
+    puts "You lose!"  
   else
     player1_roll
   end
 end
-
-# def tell_score
-  
-#   if @die1 == @die2
-#     puts "you have a match "
-  
-#   elsif @die1 == @die3
-#     puts "you have a match "
-  
-#   elsif @die2 == @die3
-#     puts "you have a match "
-#   elsif @die1 == 4 @die2 == 5 @die3 == 6
-#     puts 'you win'
-  
-#   else
-#     player1_roll
-#   end
-# end
 end
 
 
