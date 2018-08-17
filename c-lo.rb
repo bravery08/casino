@@ -39,28 +39,64 @@ def player1_roll
   show_dice
 end
 
+def player2_roll
+  @die1 = 1 + rand(6)
+  @die2 = 1 + rand(6)
+  @die3 = 1 + rand(6)
+  show_dice
+end
+
 def show_dice
   print "Die1: ", @die1, " ", "Die2: ", @die2," ", "Die3: ", @die3, " "
   tell_score
 end
 
 
-
-
 def tell_score
   
-  if @die1 == @die2
-    print "you have a match "
+  case
+  when @die1 == @die2
+    puts "you have a match "
   
-  elsif @die1 == @die3
-    print "you have a match "
+  when @die1 == @die3
+    puts "you have a match "
   
-  elsif @die2 == @die3
-    print "you have a match "
+  when @die2 == @die3
+    puts "you have a match "
+  when @die1 == 4 && @die2 == 5 && @die3 == 6
+    puts "C-lo!"
+  when @die2 == 4 && @die1 == 5 && @die3 == 6
+    puts "C-lo!"
+  when @die3 == 4 && @die1 == 5 && @die2 == 6
+    puts "C-lo!"
+  when @die1 == 6 && @die2 == 5 && @die3 == 4
+    puts "C-lo!"
+  when @die1 == 4 &&  @die2 == 6 && @die3 == 5  
+    puts "C-lo!"
+  when @die1 == 5 &&  @die2 == 6 && @die3 == 4  
+    puts "C-lo!"
   else
     player1_roll
   end
 end
+
+# def tell_score
+  
+#   if @die1 == @die2
+#     puts "you have a match "
+  
+#   elsif @die1 == @die3
+#     puts "you have a match "
+  
+#   elsif @die2 == @die3
+#     puts "you have a match "
+#   elsif @die1 == 4 @die2 == 5 @die3 == 6
+#     puts 'you win'
+  
+#   else
+#     player1_roll
+#   end
+# end
 end
 
 
