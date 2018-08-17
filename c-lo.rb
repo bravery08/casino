@@ -26,6 +26,12 @@
 #  def player_2
 #  end
 
+#if player 1 > player 2 player 1 wins
+#if player 2 > player1 player 2 wins
+
+
+    
+
 
 class C_lo
 def initialize 
@@ -60,7 +66,6 @@ def tell_score
   
   when @die1 == @die3
     puts "Check your score from the last 3 numbers"
-  
   when @die2 == @die3
     puts "Check your score from the last 3 numbers"
   when @die1 == 4 && @die2 == 5 && @die3 == 6
@@ -86,7 +91,52 @@ end
 end
 
 
+
 c = C_lo.new
+
+
+# def player_wallet
+#   wallet = 100
+#   case wallet
+#   when @die1 == @die2
+#      wallet += 10
+  
+#   when @die1 == @die3
+#     wallet += 10
+#     print wallet
+  
+#   when @die2 == @die3
+#     wallet += 10
+#     print wallet
+#   when @die1 == 4 && @die2 == 5 && @die3 == 6
+#     wallet += 25
+#     print wallet
+#   when @die2 == 4 && @die1 == 5 && @die3 == 6
+#     wallet += 25
+#     print wallet
+#   when @die3 == 4 && @die1 == 5 && @die2 == 6
+#     wallet +=25
+#     print wallet
+#   when @die1 == 6 && @die2 == 5 && @die3 == 4
+#     wallet += 25
+#     print wallet
+#   when @die1 == 4 &&  @die2 == 6 && @die3 == 5  
+#     wallet += 25
+#     print wallet
+#   when @die1 == 5 &&  @die2 == 6 && @die3 == 4  
+#     wallet += 25
+#     print wallet
+#   when @die1 == 6 &&  @die2 == 4 && @die3 == 5 
+#     wallet += 25
+#     print wallet
+#   when @die1 == 1 &&  @die2 == 1 && @die3 == 1  
+#     wallet += 25
+#     print wallet  
+#   end
+# end
+
+
+
 
 
 
